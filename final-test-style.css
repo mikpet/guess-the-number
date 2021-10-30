@@ -1,0 +1,61 @@
+:root {
+    --btn-color: teal;   /* χρώμα πλήκτρων */
+    --btn-text: whitesmoke;   /* χρώμα κειμένου πλήκτρων */
+    --msg-win-color: rgb(0, 128, 32);  /* χρώμα μηνύματος επιτυχίας */
+    --msg-wrong-color: crimson;  /* χρώμα μηνύματος αποτυχίας */
+    --msg-text:floralwhite;  /* χρώμα κειμένου μηνύματος */
+	--low-high-color: gray;  /* χρώμα ιστορικού προσπαθειών */
+}
+/* 
+8. Στο αρχείο stylesheet final-test-style.css να γίνουν οι κατάλληλες αλλαγές 
+που αφορούν στα στοιχεία που εμφανίζονται στον χρήστη, προσπαθώντας να επιτύχετε 
+το αποτέλεσμα που φαίνεται στην παρουσίαση. ιδιαίτερη αναφορά γίνεται ώστε το χρώμα 
+να οριστεί με βάση τα χρώματα που ορίζονται από τις μεταβλητές CSS. */
+body {
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(-btn-text);
+    margin: 1em ;
+    width: 100%;
+}
+header {
+    font-size: 1.5em;
+}
+#instructions {
+    font-size: 1.2em;
+    padding: 0.5em;
+}
+#guess {
+    line-height: 1.8em;
+    font-size: 1.1em;
+    padding-left: 0.5em;
+}
+#new-guess {
+    font-size: 1.1em;
+} 
+#check { 
+    padding-left: 0.5em;
+}
+button {
+    background-color: var(--btn-color);
+    color: var(--btn-text);
+    font-size: 1.5rem;
+    border-radius: 5px;
+}
+#message {
+    color: var(--msg-text);
+    text-align: center;
+    font-size: 1.5rem;
+    margin-left: 0.5em;
+    width: "100%";
+}
+#low-high {
+    color: var(--low-high-color);
+    font-size: 1.2em;
+    padding: 0.5em;
+}
+#restart {
+    display: none
+}
+
+    
